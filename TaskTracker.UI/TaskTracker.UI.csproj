@@ -94,6 +94,16 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\actions\index.js" />
+    <Content Include="app\actions\task.js" />
+    <Content Include="app\components\TaskTracker\index.js" />
+    <Content Include="app\components\TaskTracker\presenter.js" />
+    <Content Include="app\constants\actionTypes.js" />
+    <Content Include="app\index.js" />
+    <Content Include="app\reducers\index.js" />
+    <Content Include="app\reducers\task.js" />
+    <Content Include="app\stores\configureStore.js" />
+    <Content Include="index.html" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -109,7 +119,9 @@
   <ItemGroup>
     <Content Include="scripts\ai.0.22.19-build00125.js" />
     <Content Include="scripts\ai.0.22.19-build00125.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="webpack.config.js" />
   </ItemGroup>
   <ItemGroup>

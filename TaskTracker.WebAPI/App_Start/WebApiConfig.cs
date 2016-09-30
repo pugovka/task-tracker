@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
+using System.Web.Http.Cors;
 
 namespace TaskTracker.WebAPI
 {
@@ -10,6 +11,12 @@ namespace TaskTracker.WebAPI
         public static void Register(HttpConfiguration config)
         {
             // Web API configuration and services
+
+            var cors = new EnableCorsAttribute(
+            origins: "http://localhost:8333",
+            headers: "*",
+            methods: "*");
+            config.EnableCors(cors);
 
             // Web API routes
             config.MapHttpAttributeRoutes();
