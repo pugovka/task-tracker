@@ -96,9 +96,13 @@
   <ItemGroup>
     <Content Include="app\actions\index.js" />
     <Content Include="app\actions\task.js" />
+    <Content Include="app\components\TaskForm\index.js" />
+    <Content Include="app\components\TaskForm\presenter.js" />
     <Content Include="app\components\TaskTracker\index.js" />
     <Content Include="app\components\TaskTracker\presenter.js" />
     <Content Include="app\constants\actionTypes.js" />
+    <Content Include="app\constants\index.js" />
+    <Content Include="app\functions\index.js" />
     <Content Include="app\index.js" />
     <Content Include="app\reducers\index.js" />
     <Content Include="app\reducers\task.js" />
@@ -127,6 +131,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

@@ -30,6 +30,8 @@
     "build": "webpack -d --config webpack.config.js --colors"
   },
   "-vs-binding": {
-    "AfterBuild": [ "build" ]
+    "AfterBuild": [
+      "build"
+    ]
   }
 }
