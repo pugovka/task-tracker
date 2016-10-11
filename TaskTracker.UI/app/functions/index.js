@@ -1,7 +1,7 @@
 ﻿'use strict';
 
 export function createCORSRequest(method, url) {
-  var xhr = new XMLHttpRequest();
+  let xhr = new XMLHttpRequest();
   if ("withCredentials" in xhr) {
 
     // Check if the XMLHttpRequest object has a "withCredentials" property.
@@ -42,7 +42,7 @@ export function httpRequest(method, url, data = {}) {
       } else if (this.status == 201) {
         resolve(this.response);
       } else {
-        var error = new Error(this.statusText);
+        const error = new Error(this.statusText);
         error.code = this.status;
         reject(error);
       }

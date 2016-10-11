@@ -123,6 +123,7 @@
   <ItemGroup>
     <Content Include="scripts\ai.0.22.19-build00125.js" />
     <Content Include="scripts\ai.0.22.19-build00125.min.js" />
+    <Content Include="server.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
